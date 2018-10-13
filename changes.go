@@ -10,6 +10,9 @@ type Changes struct {
 		ID    int
 		Adult bool
 	}
+	Page         int
+	TotalPages   int `json:"total_pages"`
+	TotalResults int `json:"total_results"`
 }
 
 var changeOptions = map[string]struct{}{
